@@ -13,7 +13,16 @@
  *     (You will need more wrapping elements to style things)
  */
 function createResultShopItem(result) {
+  const shopItem = document.createElement(`article`);
+  shopItem.classList.add(`shop-item`);
 
+
+  shopItem.innerHTML = `
+  <img class="shop-item__pic" src="${result.Images[0].url_fullxfull}" alt="${result.title}">
+  <h3 class="shop-item__title">${result.title}</h3>
+  <h4 class="shop-item__shop-name">${result.Shop.shop_name}</h4>
+  <p class="shop-item__price">$${result.price}</p>`;
+  return shopItem;
 }
 
 /**
@@ -27,18 +36,23 @@ function createResultShopItem(result) {
  * @return undefined
  */
 function showAllResults(response) {
+  const products = document.querySelector(`#products`);
   // Get the products element from the DOM
+  products.innerHTML = ``;
 
   // Clear the contents of the products element
-
   // Set 'items' to the results array from the response
-  const items = 2; // 2 is only here to stop an error
+  const items = response.results;
 
   for (let i = 0; i < items.length; i++) {
     // Create a new shop item element for each item in items
+    const shopItem = createResultShopItem(items[i]);
+    const itemsList = products.appendChild(shopItem);
+
 
     // Append current shop item element to the products element
   }
+return undefined;
 }
 
 /**
