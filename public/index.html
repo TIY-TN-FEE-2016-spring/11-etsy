@@ -44,8 +44,8 @@
       </div>
     </nav>
   </header>
+<main>
 
-  <div id="products"></div>
 
   <script src="/app.js" charset="utf-8"></script>
 
@@ -53,5 +53,50 @@
     // Starts the application and searches for "Yoshi"
     searchEtsy(`Yoshi`);
   </script>
+
+<div class="left-column">
+  <p class="Show-results-for">
+    <strong>Show results for:</strong>
+  </p>
+
+<div class="categories">
+<p class="All-categories">
+  <strong>All categories</strong>
+</p>
+<a class="living" href="http://www.placecage.com/">Home & Living</a>
+<a class="paper" href="http://www.placecage.com/">Paper & Party Supplies</a>
+</div>
+
+<p class="refine"><strong>Refine your search</strong>
+</p>
+
+<div class="left-column__large__container">
+
+<ul class="item-types">
+  <li><a href="http://www.placecage.com/"</a>
+</a><strong>All Items</strong></li>
+  <li><a href="http://www.placecage.com/">Handmade</a></li>
+  <li><a href="http://www.placecage.com/">Vintage</a></li>
+</ul>
+
+<div class="price">
+  <p class="price__words">Price ($)</p>
+ <input class="low-price" placeholder="Low">
+  <p>to</p>
+  <input class="high-price" placeholder="High">
+  <button type="button" name="button"><i class="fa fa-caret-right"></i></button>
+</div>
+
+<div class="filter-container">
+<p class="filter"><strong>Filter by color</strong></p>
+</div>
+
+</div>
+</div>
+
+<div class="search-results">
+  <div class ="products" id="products"></div>
+  </div>
+</main>
 </body>
 </html>
