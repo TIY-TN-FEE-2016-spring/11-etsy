@@ -12,6 +12,13 @@ body {
   font-family: $brand-sans-serif;
 }
 
+.sub-main {
+  display: flex;
+  max-width: 70rem;
+  margin: auto;
+}
+
+
 ul {
   padding-left: 0;
 

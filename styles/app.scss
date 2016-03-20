@@ -15,6 +15,58 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   max-width: 10rem;
 }
 
+.left-column {
+  width: 25vw;
+  margin: $gutter;
+}
+
 .search-results {
+
+}
+.filter-button {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 0;
+  border: 0.05rem lightgrey solid;
+}
+
+.red {
+  background: red;
+}
+
+.orange {
+  background: orange;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.purple {
+  background: purple;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+}
+
+.low-price {
+  max-width: 40%
+}
+
+.high-price {
+  max-width: 40%
 
 }
