@@ -10,19 +10,64 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'header';
 @import 'inputs';
 
+.lower-top-nav__grandparent {
+width: 100vw;
+background: $brand-white;
+border-top: 1px lightgrey solid;
+
+}
+
+.lower-top-nav__parent {
+  width: 70rem;
+  margin: auto;
+
+}
+
+.lower-top-nav {
+  width: 100%;
+  display: flex;
+  margin: $gutter;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+
+.lower-top-nav__link {
+
+}
+
+
+
+
 
 .shop-item__pic {
   max-width: 10rem;
 }
 
 .left-column {
-  width: 25vw;
+  width: 35%;
   margin: $gutter;
+  background: $brand-white;
 }
 
 .search-results {
+width: calc(75% - $gutter - $gutter);
+background: $brand-white;
+margin: $gutter;
 
 }
+
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.shop-item {
+  width: 30%;
+}
+
+
 .filter-button {
   height: 1.5rem;
   width: 1.5rem;
@@ -69,4 +114,40 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .high-price {
   max-width: 40%
 
+}
+
+.ordering-options {
+}
+
+.ordering-options__link:link {
+  color: $brand-light-blue;
+  text-decoration: none;
+
+}
+
+.shop-location__anywhere:link {
+  color: black;
+  text-decoration: none;
+}
+
+.shop-location__us:link {
+  color: $brand-light-blue;
+  text-decoration: none;
+}
+
+.shop-location__custom:link {
+  color: $brand-light-blue;
+  text-decoration: none;
+  }
+
+.country-menu {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: normal;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
 }

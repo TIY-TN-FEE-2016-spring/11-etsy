@@ -1,119 +1,188 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>11etsy</title>
-  <link rel="stylesheet" href="/app.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>11etsy</title>
+    <link rel="stylesheet" href="/app.css">
+  </head>
+  <body>
 
-  <header class="site-header">
-    <nav class="top-nav">
-      <div class="container">
-        <div class="top-nav__row">
-          <h1 class="top-nav__logo">Etsy</h1>
-          <div class="top-nav__search">
-            <div class="input-addon">
-              <input type="text" class="input-addon__input" value="Yoshi">
-              <button class="input-addon__btn">Search</button>
+    <header class="site-header">
+      <nav class="top-nav">
+        <div class="container">
+          <div class="top-nav__row">
+            <h1 class="top-nav__logo">Etsy</h1>
+            <div class="top-nav__search">
+              <div class="input-addon">
+                <input type="text" class="input-addon__input" value="Yoshi">
+                <button class="input-addon__btn">Search</button>
+              </div>
+            </div>
+
+            <div class="top-nav__right">
+              <ul class="user-nav">
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="#sell">Sell on Etsy</a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="#register">Register</a>
+                </li>
+                <li class="user-nav__item user-nav__item--btn">
+                  <a class="user-nav__link" href="#login">Sign In</a>
+                </li>
+                <li class="user-nav__item user-nav__item--cart">
+                  <a class="user-nav__link" href="#login">
+                    <span class="cart-stack">
+                      <span class="cart-stack__icon fa fa-cart-plus"></span>
+                      Cart
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+      </nav>
+    </header>
+    <main>
 
-          <div class="top-nav__right">
-            <ul class="user-nav">
-              <li class="user-nav__item">
-                <a class="user-nav__link" href="#sell">Sell on Etsy</a>
+      <script src="/app.js" charset="utf-8"></script>
+
+      <script type="text/javascript">
+        // Starts the application and searches for "Yoshi"
+        searchEtsy(`Yoshi`);
+      </script>
+      <div class="lower-top-nav__grandparent">
+      <div class="lower-top-nav__parent">
+      <div class="lower-top-nav">
+
+          <p class="lower-top-nav__link">Clothing & Accesories</p>
+          <p class="lower-top-nav__link">Jewelry</p>
+          <p class="lower-top-nav__link">Craft Suppies & Tools</p>
+          <p class="lower-top-nav__link">Weddings</p>
+          <p class="lower-top-nav__link">Entertainment</p>
+          <p class="lower-top-nav__link">Home & Living</p>
+          <p class="lower-top-nav__link">Kids & Baby</p>
+          <p class="lower-top-nav__link">Vintage</p>
+      </div>
+      </div>
+      </div>
+
+      <div class="sub-main">
+        <div class="left-column">
+          <p class="Show-results-for">
+            <strong>Show results for:</strong>
+          </p>
+
+          <div class="categories">
+            <p class="All-categories">
+              <strong>All categories</strong>
+            </p>
+            <a class="living" href="http://www.placecage.com/">Home & Living</a>
+            <a class="paper" href="http://www.placecage.com/">Paper & Party Supplies</a>
+          </div>
+
+          <p class="refine">
+            <strong>Refine your search</strong>
+          </p>
+
+          <div class="left-column__large__container">
+
+            <ul class="item-types">
+              <li class="item-type">
+                <strong>Item type</strong>
               </li>
-              <li class="user-nav__item">
-                <a class="user-nav__link" href="#register">Register</a>
+              <li>
+                <a <stron href="http://www.placecage.com/" </a> </a>>All Items</strong>
               </li>
-              <li class="user-nav__item user-nav__item--btn">
-                <a class="user-nav__link" href="#login">Sign In</a>
+              <li>
+                <a href="http://www.placecage.com/">Handmade</a>
               </li>
-              <li class="user-nav__item user-nav__item--cart">
-                <a class="user-nav__link" href="#login">
-                  <span class="cart-stack">
-                    <span class="cart-stack__icon fa fa-cart-plus"></span>
-                    Cart
-                  </span>
-                </a>
+              <li>
+                <a href="http://www.placecage.com/">Vintage</a>
               </li>
             </ul>
+
+            <div class="price">
+              <p class="price__words">Price ($)</p>
+              <input class="low-price" placeholder="Low">
+              <p>to</p>
+              <input class="high-price" placeholder="High">
+              <button type="button" name="button">
+                <i class="fa fa-caret-right"></i>
+              </button>
+            </div>
+
+            <div class="filter-container">
+              <p class="filter">
+                <strong>Filter by color</strong>
+              </p>
+              <div class="filter-buttons">
+                <button class="filter-button red" type="button" name="button"></button>
+                <button class="filter-button orange" type="button" name="button"></button>
+                <button class="filter-button yellow" type="button" name="button"></button>
+                <button class="filter-button green" type="button" name="button"></button>
+                <button class="filter-button blue" type="button" name="button"></button>
+                <button class="filter-button purple" type="button" name="button"></button>
+                <button class="filter-button black" type="button" name="button"></button>
+                <button class="filter-button white" type="button" name="button"></button>
+              </div>
+
+              <div class="ordering-options">
+                <p class="ordering-options__heading">
+                  <strong>Ordering options</strong>
+                </p>
+                <p class="cards">
+                  <button class="order-option__button" type="button" name="button"></button>
+                  <a href="www.placecage.com" class="ordering-options__link">Accepts Etsy gift cards</a>
+                </p>
+                <p class="cards">
+                  <button class="order-option__button" type="button" name="button"></button>
+                  <a href="www.placecage.com" class="ordering-options__link">Customizable</a>
+                </p>
+              </div>
+
+              <div class="shop-location">
+                <p class="shop-location heading">
+                  <strong>Shop Location</strong>
+                </p>
+                <p class="shop-location__anywhere">
+                  <button class="order-option__button" type="button" name="button"></button>
+                  <a class="shop-location__anywhere" href="www.placecage.com">
+                    <strong>Anywhere</strong>
+                  </a>
+                </p>
+                <p class="shop-location__us">
+                  <button class="order-option__button" type="button" name="button"></button>
+                  <a class="shop-location__us" href="www.placecage.com">United States</a>
+                </p>
+                <p class="shop-location__custom">
+                  <button class="order-option__button" type="button" name="button"></button>
+                  <a class="shop-location__custom" href="www.placecage.com">Choose a custom location</a>
+                </p>
+              </div>
+
+              <div class="ship-to">
+                <p class="ship-to__heading">
+                  <strong>Ship to</strong>
+                </p>
+                <select class="country-menu" name="select">
+                  <option value="value1">United States</option>
+                  <option value="value2" selected>Cananda</option>
+                  <option value="value3">Somewhere else</option>
+                </select>
+              </div>
+
+            </div>
+
           </div>
         </div>
+
+        <div class="search-results">
+          <div class="products" id="products"></div>
+        </div>
+
       </div>
-    </nav>
-  </header>
-<main>
-
-
-  <script src="/app.js" charset="utf-8"></script>
-
-  <script type="text/javascript">
-    // Starts the application and searches for "Yoshi"
-    searchEtsy(`Yoshi`);
-  </script>
-<div class="sub-main">
-<div class="left-column">
-  <p class="Show-results-for">
-    <strong>Show results for:</strong>
-  </p>
-
-<div class="categories">
-<p class="All-categories">
-  <strong>All categories</strong>
-</p>
-<a class="living" href="http://www.placecage.com/">Home & Living</a>
-<a class="paper" href="http://www.placecage.com/">Paper & Party Supplies</a>
-</div>
-
-<p class="refine"><strong>Refine your search</strong>
-</p>
-
-<div class="left-column__large__container">
-
-<ul class="item-types">
-  <li><a href="http://www.placecage.com/"</a>
-</a><strong>All Items</strong></li>
-  <li><a href="http://www.placecage.com/">Handmade</a></li>
-  <li><a href="http://www.placecage.com/">Vintage</a></li>
-</ul>
-
-<div class="price">
-  <p class="price__words">Price ($)</p>
- <input class="low-price" placeholder="Low">
-  <p>to</p>
-  <input class="high-price" placeholder="High">
-  <button type="button" name="button"><i class="fa fa-caret-right"></i></button>
-</div>
-
-<div class="filter-container">
-<p class="filter"><strong>Filter by color</strong></p>
-<div class="filter-buttons">
-<button class="filter-button red" type="button" name="button"></button>
-<button class="filter-button orange"type="button" name="button"></button>
-<button class="filter-button yellow"type="button" name="button"></button>
-<button class="filter-button green"type="button" name="button"></button>
-<button class="filter-button blue"type="button" name="button"></button>
-<button class="filter-button purple"type="button" name="button"></button>
-<button class="filter-button black"type="button" name="button"></button>
-<button class="filter-button white"type="button" name="button"></button>
-</div>
-</div>
-
-
-
-</div>
-</div>
-
-<div class="search-results">
-  <div class ="products" id="products"></div>
-  </div>
-
-
-
-
-  </div>
-</main>
-</body>
+    </main>
+  </body>
 </html>
