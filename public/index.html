@@ -45,13 +45,6 @@
       </nav>
     </header>
     <main>
-
-      <script src="/app.js" charset="utf-8"></script>
-
-      <script type="text/javascript">
-        // Starts the application and searches for "Yoshi"
-        searchEtsy(`Yoshi`);
-      </script>
       <div class="lower-top-nav__grandparent">
       <div class="lower-top-nav__parent">
       <div class="lower-top-nav">
@@ -79,14 +72,16 @@
             <p class="All-categories">
               <strong>All categories</strong>
             </p>
-            <a class="living" href="http://www.placecage.com/">Home & Living</a>
-            <a class="living" href="http://www.placecage.com/">Paper & Party Supplies</a>
+            <ul class="choices">
+            <li><a class="living" href="http://www.placecage.com/">Home & Living</a></li>
+            <li><a class="living" href="http://www.placecage.com/">Paper & Party Supplies</a></li>
+            </ul>
           </div>
-
+         </div>
           <p class="refine">
             <strong>Refine your search</strong>
           </p>
-          </div>
+
           <div class="left-column__large__container">
 
             <ul class="item-types">
@@ -181,10 +176,6 @@
           </div>
         </div>
 
-
-
-
-
         <div class="search-results">
           <div class="search-bar">
           <div class="search-left">
@@ -202,5 +193,12 @@
        </div>
 
     </main>
-  </body>
+
+    <script src="/app.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      // Starts the application and searches for "Yoshi"
+      searchEtsy(`Yoshi`);
+    </script>
+</body>
 </html>
