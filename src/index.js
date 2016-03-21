@@ -18,10 +18,14 @@ function createResultShopItem(result) {
 
 
   shopItem.innerHTML = `
+  <div class="pic_container">
   <img class="shop-item__pic" src="${result.Images[0].url_fullxfull}" alt="${result.title}">
+  </div>
   <h3 class="shop-item__title">${result.title}</h3>
-  <h4 class="shop-item__shop-name">${result.Shop.shop_name}</h4>
-  <p class="shop-item__price">$${result.price}</p>`;
+  <div class="shop-item__lower">
+    <h4 class="shop-item__shop-name">${result.Shop.shop_name}</h4>
+    <p class="shop-item__price">$${result.price}</p>
+  </div>`;
   return shopItem;
 }
 

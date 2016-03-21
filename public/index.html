@@ -70,22 +70,23 @@
 
       <div class="sub-main">
         <div class="left-column">
+
           <p class="Show-results-for">
             <strong>Show results for:</strong>
           </p>
-
+          <div class="small-container">
           <div class="categories">
             <p class="All-categories">
               <strong>All categories</strong>
             </p>
             <a class="living" href="http://www.placecage.com/">Home & Living</a>
-            <a class="paper" href="http://www.placecage.com/">Paper & Party Supplies</a>
+            <a class="living" href="http://www.placecage.com/">Paper & Party Supplies</a>
           </div>
 
           <p class="refine">
             <strong>Refine your search</strong>
           </p>
-
+          </div>
           <div class="left-column__large__container">
 
             <ul class="item-types">
@@ -93,24 +94,26 @@
                 <strong>Item type</strong>
               </li>
               <li>
-                <a <stron href="http://www.placecage.com/" </a> </a>>All Items</strong>
+                <a class="handmade" href="http://www.placecage.com/" </a><button type="button" name="button"></button><strong>All Items</strong>
               </li>
               <li>
-                <a href="http://www.placecage.com/">Handmade</a>
+                <a  class="vintage" href="http://www.placecage.com/"><button type="button" name="button"></button>Handmade</a>
               </li>
               <li>
-                <a href="http://www.placecage.com/">Vintage</a>
+                <a class="vintage" href="http://www.placecage.com/"><button type="button" name="button"></button>Vintage</a>
               </li>
             </ul>
 
             <div class="price">
               <p class="price__words">Price ($)</p>
+              <div class="price-inputs">
               <input class="low-price" placeholder="Low">
               <p>to</p>
               <input class="high-price" placeholder="High">
-              <button type="button" name="button">
+              <button class="price-button" type="button" name="button">
                 <i class="fa fa-caret-right"></i>
               </button>
+              </div>
             </div>
 
             <div class="filter-container">
@@ -178,11 +181,26 @@
           </div>
         </div>
 
+
+
+
+
         <div class="search-results">
+          <div class="search-bar">
+          <div class="search-left">
+            <p class="right-mini-bar-text-blue">All categories</p>
+            <p class="right-mini-bar-text"><i class="fa fa-angle-right"></i> "yoshi" (25 results)</p>
+            </div>
+            <div class="search-right">
+            <p class="sort-by">Sort by:</p>
+            <p class="relevancy">Relevancy</p>
+            <p><i class="fa fa-caret-down"></i></p>
+          </div>
+          </div>
           <div class="products" id="products"></div>
         </div>
+       </div>
 
-      </div>
     </main>
   </body>
 </html>
