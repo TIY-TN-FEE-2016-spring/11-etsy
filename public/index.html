@@ -73,8 +73,8 @@
               <strong>All categories</strong>
             </p>
             <ul class="choices">
-            <li><a class="living" href="http://www.placecage.com/">Home & Living</a></li>
-            <li><a class="living" href="http://www.placecage.com/">Paper & Party Supplies</a></li>
+            <li class="category-choice"><a class="living" href="http://www.placecage.com/">Home & Living</a></li>
+            <li class="category-choice"><a class="living" href="http://www.placecage.com/">Paper & Party Supplies</a></li>
             </ul>
           </div>
          </div>
@@ -89,22 +89,22 @@
                 <strong>Item type</strong>
               </li>
               <li>
-                <a class="handmade" href="http://www.placecage.com/" </a><button type="button" name="button"></button><strong>All Items</strong>
+                <input type="radio"><a class="handmade" href="http://www.placecage.com/"><strong>All Items</strong></a>
               </li>
               <li>
-                <a  class="vintage" href="http://www.placecage.com/"><button type="button" name="button"></button>Handmade</a>
+                <input type="radio"><a  class="vintage" href="http://www.placecage.com/">Handmade</a>
               </li>
               <li>
-                <a class="vintage" href="http://www.placecage.com/"><button type="button" name="button"></button>Vintage</a>
+                <input type="radio"><a class="vintage" href="http://www.placecage.com/">Vintage</a>
               </li>
             </ul>
 
             <div class="price">
               <p class="price__words">Price ($)</p>
               <div class="price-inputs">
-              <input class="low-price" placeholder="Low">
+              <input type="text" class="low-price" placeholder="Low">
               <p>to</p>
-              <input class="high-price" placeholder="High">
+              <input type="text" class="high-price" placeholder="High">
               <button class="price-button" type="button" name="button">
                 <i class="fa fa-caret-right"></i>
               </button>
@@ -131,11 +131,11 @@
                   <strong>Ordering options</strong>
                 </p>
                 <p class="cards">
-                  <button class="order-option__button" type="button" name="button"></button>
+                  <input type="radio">
                   <a href="www.placecage.com" class="ordering-options__link">Accepts Etsy gift cards</a>
                 </p>
                 <p class="cards">
-                  <button class="order-option__button" type="button" name="button"></button>
+                  <input type="radio">
                   <a href="www.placecage.com" class="ordering-options__link">Customizable</a>
                 </p>
               </div>
@@ -145,17 +145,17 @@
                   <strong>Shop Location</strong>
                 </p>
                 <p class="shop-location__anywhere">
-                  <button class="order-option__button" type="button" name="button"></button>
+                  <input type="radio">
                   <a class="shop-location__anywhere" href="www.placecage.com">
                     <strong>Anywhere</strong>
                   </a>
                 </p>
                 <p class="shop-location__us">
-                  <button class="order-option__button" type="button" name="button"></button>
+                  <input type="radio">
                   <a class="shop-location__us" href="www.placecage.com">United States</a>
                 </p>
                 <p class="shop-location__custom">
-                  <button class="order-option__button" type="button" name="button"></button>
+                  <input type="radio">
                   <a class="shop-location__custom" href="www.placecage.com">Choose a custom location</a>
                 </p>
               </div>

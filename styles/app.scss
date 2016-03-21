@@ -75,7 +75,11 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   margin: 0 0 $gutter;
   font-size: 0.8rem;
   font-weight: lighter;
-}
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
 
 .shop-item__lower {
   display: flex;
@@ -136,9 +140,16 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 }
 
+.category-choice {
+  margin-left: 0.5rem;
+  margin-bottom: $gutter;
+}
+
 .living {
   color: $brand-light-blue;
   text-decoration: none;
+
+
 }
 
 .handmade {
