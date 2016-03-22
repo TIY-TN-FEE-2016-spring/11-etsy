@@ -314,6 +314,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   color: $brand-light-blue;
   text-decoration: none;
   margin: $gutter;
+  margin-left: 0;
   font-size: 1rem;
   font-family: $brand-sans-serif;
   font-weight: lighter;
@@ -334,7 +335,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .globe-line {
   display: flex;
   justify-content: space-between;
-  width: 30rem;
+  width: 35rem;
   margin: auto;
 }
 
@@ -342,6 +343,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
   flex-direction: row;
   margin: 0;
+  justify-content: center;
 }
 
 .money {
@@ -350,13 +352,17 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   justify-content: center;
   vertical-align: middle;
   border: lighten($brand-gray, 40%) solid 1px;
-  padding: .5rem;
+  padding: .6rem;
+  align-self: center;
+  color: darken(lightgrey, 40%);
 
 }
 
 .help {
   border: lighten($brand-gray, 40%) solid 1px;
-  padding: 1rem;
+  padding: .6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .legal-stuff {
@@ -371,4 +377,17 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .legal-black  {
   display: flex;
   flex-direction: row;
+}
+
+.legal-grey {
+  color: darken(lightgrey, 10%);
+
+}
+
+.legal-black {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  color: darken(lightgrey, 30%);
+
 }
