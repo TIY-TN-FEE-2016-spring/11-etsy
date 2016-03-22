@@ -166,6 +166,25 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
 }
 
+.low-price {
+  width: 5rem;
+  border: 0;
+  background: $brand-white;
+
+  border: lighten($brand-gray, 50%) solid 1px;
+
+}
+
+.price-button {
+  width: 3rem;
+  font-size: 2rem;
+  margin-left: .5rem;
+  background: $brand-white;
+  border: lighten($brand-gray, 50%) solid 1px;
+
+
+}
+
 .filter-button {
   height: 1.5rem;
   width: 1.5rem;
@@ -245,4 +264,111 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   font-size: 1.2rem;
   font-weight: normal;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+.subscribe-bar {
+  width: 70rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: lighten($brand-gray, 50%) solid .5rem;
+
+}
+
+.subscribe-header {
+  margin-top: 0;
+
+}
+
+.footer-large-container {
+  width: 70rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+}
+
+.part-two {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  font-size: .9rem;
+}
+
+.footer-link {
+  color: $brand-light-blue;
+  text-decoration: none;
+  margin: $gutter;
+  font-size: 1rem;
+  font-family: $brand-sans-serif;
+  font-weight: lighter;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+}
+
+.very-bottom-container {
+  display: flex;
+  flex-direction: column;
+  width: 70rem;
+  margin: auto;
+}
+
+.globe-line {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+  margin: auto;
+}
+
+.money-side {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.money {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  border: lighten($brand-gray, 40%) solid 1px;
+  padding: .5rem;
+
+}
+
+.help {
+  border: lighten($brand-gray, 40%) solid 1px;
+  padding: 1rem;
+}
+
+.legal-stuff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 25rem;
+
+}
+
+.legal-black  {
+  display: flex;
+  flex-direction: row;
 }
