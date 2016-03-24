@@ -56,7 +56,7 @@ function showAllResults(response) {
 
     // Append current shop item element to the products element
   }
-return undefined;
+  return undefined;
 }
 
 /**
@@ -79,9 +79,16 @@ function searchEtsy(searchTerm, getData = fetchEtsy) {
 function start() {
   searchEtsy(`Yoshi`);
   // Lookup the search bar button element
+  const etsyButton = document.querySelector(`.input-addon__btn`);
 
   // Listen for click on search button
   // When clicked
   //   * Look up value for search bar input
   //   * Lookup results for search term and render results to the DOM
+
+  etsyButton.addEventListener(`click`, () => {
+    debugger;
+    const input = document.querySelector(`.input-addon__input`).value;
+    return searchEtsy(input);
+  });
 }
