@@ -87,7 +87,7 @@ function start() {
   //   * Lookup results for search term and render results to the DOM
 
   etsyButton.addEventListener(`click`, () => {
-    debugger;
+
     const input = document.querySelector(`.input-addon__input`).value;
     return searchEtsy(input);
   });
